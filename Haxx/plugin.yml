@@ -1,0 +1,7 @@
+ name: HaxxServer
+ version: 1.0.0
+ description: This is the main Haxx Backend
+ 
+ author: EssexIO
+ 
+ main: me.EssexIO.Main
