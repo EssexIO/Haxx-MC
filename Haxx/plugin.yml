@@ -5,3 +5,7 @@
  author: EssexIO
  
  main: me.EssexIO.Main
+ 
+ commands:
+   whitelist:
+      description: Whitelist Command

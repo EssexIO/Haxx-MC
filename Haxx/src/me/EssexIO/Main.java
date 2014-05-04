@@ -31,5 +31,6 @@ public class Main extends JavaPlugin {
 	public void onEnable() {
 		plugin = this;
 		registerEvents(this, new PlayerJoin());
+		getCommand("whitelist").setExecutor(new WhitelistCommand());
 	}
 }

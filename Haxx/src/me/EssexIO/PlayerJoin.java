@@ -24,7 +24,7 @@ public class PlayerJoin implements Listener {
 	public void onPlayerJoin(PlayerLoginEvent event) {
 		Player p = event.getPlayer();
 
-		if (!this.customConfig
+		if (!customConfig
 				.getBoolean(p.getName().toString() + ".Whitelist") == true) {
 			event.disallow(
 					Result.KICK_WHITELIST,
