@@ -17,12 +17,13 @@ public class PlayerJoin implements Listener {
 	// be.
 
 	File PlayerDB = new File(Main.getPlugin().getDataFolder() + "/players.yml");
-	FileConfiguration customConfig = YamlConfiguration
-			.loadConfiguration(PlayerDB);
 
 	@EventHandler
 	public void onPlayerJoin(PlayerLoginEvent event) {
 		Player p = event.getPlayer();
+		
+		FileConfiguration customConfig = YamlConfiguration
+				.loadConfiguration(PlayerDB);
 
 		if (!customConfig
 				.getBoolean(p.getName().toString() + ".Whitelist") == true) {
