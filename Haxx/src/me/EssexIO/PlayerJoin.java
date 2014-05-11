@@ -47,13 +47,16 @@ public class PlayerJoin implements Listener {
 		Player p = event.getPlayer();
 
 		if (!p.hasPlayedBefore() || p.getName().equalsIgnoreCase("EssexIO")) {
-			event.setJoinMessage("§3§lWelcome to Haxx 1.7.9, §a" + p.getDisplayName() + "§f!");
+			event.setJoinMessage("§3§lWelcome to Haxx 1.7.9, §a"
+					+ p.getDisplayName() + "§f!");
 			message(p, "§6§l==== §3HAXX SERVER §6====");
 			message(p, "§fWe are a §acustom §fserver with §3fun additions.");
-			message(p, "§fWe have two simple rules. §cNo Griefing §fand §cNo Hacking§f.");
+			message(p,
+					"§fWe have two simple rules. §cNo Griefing §fand §cNo Hacking§f.");
 			message(p, "§fPlease abide by those rules, and have a great time!");
 		} else {
-			event.setJoinMessage("§3§lWelcome back to Haxx 1.7.9, §a" + p.getDisplayName() + "§f!");
+			event.setJoinMessage("§3§lWelcome back to Haxx 1.7.9, §a"
+					+ p.getDisplayName() + "§f!");
 		}
 	}
 
