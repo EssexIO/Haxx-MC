@@ -30,7 +30,11 @@ public class Main extends JavaPlugin {
 	@Override
 	public void onEnable() {
 		plugin = this;
-		registerEvents(this, new PlayerJoin());
+		registerEvents(this, new PlayerJoin(), new KillReward(),
+				new ChatFormat());
 		getCommand("whitelist").setExecutor(new WhitelistCommand());
+		getCommand("pl").setExecutor(new NoPL());
+		getCommand("plugins").setExecutor(new NoPL());
+		getCommand("?").setExecutor(new NoPL());
 	}
 }

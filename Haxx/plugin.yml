@@ -9,3 +9,9 @@
  commands:
    whitelist:
       description: Whitelist Command
+   pl:
+      description: List Plugins
+   plugins:
+      description: List Plugins
+   ?:
+      description: List Plugins 
